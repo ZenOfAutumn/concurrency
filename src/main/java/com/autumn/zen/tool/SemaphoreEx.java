@@ -21,7 +21,6 @@ public class SemaphoreEx {
     private Semaphore available;
 
     public Pool(Class<T> clazz, int size) {
-
       this.size = size;
       checkedOut = new boolean[size];
       available = new Semaphore(size, true);
